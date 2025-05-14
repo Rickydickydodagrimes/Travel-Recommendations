@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: sans-serif, Arial;
+    background-image: linear-gradient(to right, rgba(31, 35, 54, 0.8)0%, rgba(255, 255, 255, 0.2)100%),
+    url(./travel-concept-with-landmarks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(65, 63, 63);
+    padding: 20px;
+    color: white;
+    opacity: 0.9;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(62, 131, 72, 0.2), rgba(0,0,0,0.8));
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+}
+ nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ }
+ nav a:hover{
+    text-decoration: underline;
+    transform-style: flat;
+ }
+input[type = "text"]{
+    border: none;
+    border-radius: 50px;
+    padding: 7px;
+    width: 250px;
+}
+button{
+    border: none;
+    border-radius: 7px;
+    padding: 9px;
+    background-color: #3b883d;
+    color: white;
+    width: 100px;
+}
+button:hover{
+    background-color: #48a84b;
+}
+#container{
+    display: flex;
+    
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#homepage{
+    padding-top: 10%;
+    padding-left: 150px;
+    width: 50%;
+    flex: 4;              
+   
+
+   
+}
+#exploreheading{
+    font-size:50px;
+    color:white;
+    
+
+}
+#homepage p{
+    color:white;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 20px;
+    font-size: 15px;
+   
+    
+}
+
+#sidebar{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 10%;
+    height: 30%;
+    flex: 0.5;              
+    padding-top: 130px;
+    padding-left: 5px;
+    
+
+    
+}
+#sidebar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 30%;
+}
+
+#fb:hover{
+    color: blue;
+}
+#insta:hover{
+    color:  #E1306C;
+}
+#twitter:hover{
+    color: black;
+}
+#yt:hover{
+    color: red;
+}
+#searchresults{
+    flex: 6.5;
+  text-align: center;
+   padding-top:1% ;
+   max-height: 100vh;
+   overflow-y: auto;
+}
+.results{
+  width: 400px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 20px;
+  margin-top: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.results img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  
+}
+
+.results h4 {
+  margin: 10px 15px 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.results p {
+  margin: 0 15px 15px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
