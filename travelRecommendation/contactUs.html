@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conatc Us</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contacUs.css">
     <script src="https://kit.fontawesome.com/665ffa3c11.js" crossorigin="anonymous"></script>
 </head>
@@ -37,15 +37,29 @@
            
                 <form id="form">
                 <label for="name">Name:</label><br>
-                <input type="text"><br>
+                <input id="inputField" type="text" required placeholder="John Doe"><br>
                 <label for="email">Email:</label><br>
-                <input type="email"><br>
+                <input id="emailField" type="email" required placeholder="abc@email.com"><br>
                 <label for="message">Message:</label><br>
-                <textarea type="textarea" rows="10" required></textarea>
-                <button id="submit" >Submit</button>
+                <textarea id="textareaField" type="textarea" rows="10" required placeholder="Type here...."></textarea>
+                <button id="submit" onclick="submit()" >Submit</button>
               </form>
             
               
         </div>
+        <script>
+ function submit() {
+                 const email = document.getElementById("emailField"); 
+    const input = document.getElementById("inputField"); // ID for the input field
+    const textarea = document.getElementById("textareaField"); // ID for the textarea
+
+    if (input.value.trim() !== "" && textarea.value.trim() !== "" && email.value.trim() !== "") {
+        alert("Thank you for reaching out!");
+    }
+}
+
+document.getElementById("submit").addEventListener("click", submit);
+            
+        </script>
 </body>
 </html>
